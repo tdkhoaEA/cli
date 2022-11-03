@@ -9,9 +9,19 @@ name = "cli"
 path = "src/main.rs"
 
 [dependencies]
-clap = "2"
-term = "0.5"
+clap = { version = "3.2.23", features = ["derive"] }
+#term = "0.5"
+anyhow = "1.0.65"
+#build = "0.0.2"
+#coverage = "0.1.0"
+#docgen = "0.1.2"
+#info = "0.1.0"
+#move-command-line-common = "0.3.2"
+#reqwest = "0.11.12"
+# serde = { version = "1.0.147", features = ["derive"] }
+sandbox = "0.1.1"
 
 [build-dependencies]
-clap = "2"
-
+# clap = {version = "~2.27.0", features = ["yaml"]}
+clap = { version = "3.2.23", features = ["derive"] }
+clap_complete = "3.2.5"
